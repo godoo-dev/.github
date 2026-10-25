@@ -12,7 +12,7 @@ useful foundations while keeping independent versions and release cycles.
 | --- | --- | --- |
 | [TypeScript libraries](https://github.com/godoo-dev/godoo-ts) | Odoo client, model introspection and disposable Odoo test environments | [`@godoo-dev/client`](https://www.npmjs.com/package/@godoo-dev/client), [`@godoo-dev/introspection`](https://www.npmjs.com/package/@godoo-dev/introspection), [`@godoo-dev/testcontainers`](https://www.npmjs.com/package/@godoo-dev/testcontainers) |
 | [Python libraries](https://github.com/godoo-dev/godoo-py) | Language-native client, introspection and disposable Odoo test environments | [`godoo`](https://pypi.org/project/godoo/), [`godoo-client`](https://pypi.org/project/godoo-client/), [`godoo-introspection`](https://pypi.org/project/godoo-introspection/), [`godoo-testcontainers`](https://pypi.org/project/godoo-testcontainers/) |
-| [Stateman](https://github.com/godoo-dev/godoo-stateman) | Compose desired configuration, review a plan, apply changes and detect drift | [`@godoo-dev/stateman`](https://www.npmjs.com/package/@godoo-dev/stateman) |
+| [Stateman](https://github.com/godoo-dev/godoo-stateman) | Compose desired configuration, review a plan, apply changes and detect drift | Public npm release in preparation (`@godoo-dev/stateman`) |
 | [Operational MCP server](https://github.com/godoo-dev/godoo-mcp-server) | Agent access to Odoo through each user's permissions | [`godoo-mcp-server`](https://pypi.org/project/godoo-mcp-server/) |
 | Odoo Atlas | Odoo facts and recipes, human-facing views and a separate read-only knowledge MCP | Private product in development |
 | Godoo Proxy | Hosted OAuth/SSO gateway for per-user operational Odoo access | Private product in development |
@@ -63,6 +63,8 @@ published release, deployed service or application acceptance.
 
 ## Recent work
 
+- Released TypeScript client **0.7.0**, introspection **0.2.3** and testcontainers **0.2.0** through [godoo-ts releases](https://github.com/godoo-dev/godoo-ts/releases).
+- Released the coordinated [Python **0.3.0** packages](https://github.com/godoo-dev/godoo-py/releases/tag/v0.3.0).
 - Adopted an Odoo 18 baseline and consistent required CI checks across the portfolio.
 - Added isolated package-consumer checks and hosted verification of tested release artifacts.
 - Strengthened Stateman's reviewed plans, dependency ordering, recovery and fixture workflows.
