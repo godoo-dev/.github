@@ -45,7 +45,7 @@ Proxy's complete SSO-to-Odoo flow remains in development.
 **Odoo 18 is the supported baseline.** Later majors need explicit qualification
 after the same candidate passes 18. Odoo 17 is outside active support.
 
-Every maintained repository exposes a native check entrypoint and an authoritative
+Every maintained product repository exposes a native check entrypoint and an authoritative
 CI result named `required`. Package checks install built tarballs or wheels in
 isolated consumers. Applicable integration checks run against disposable Odoo
 instances and record the observed server version. Atlas also checks its browser,
