@@ -16,7 +16,11 @@ useful foundations while keeping independent versions and release cycles.
 | [Operational MCP server](https://github.com/godoo-dev/godoo-mcp-server) | Agent access to Odoo through each user's permissions | [`godoo-mcp-server`](https://pypi.org/project/godoo-mcp-server/) |
 | Odoo Atlas | Odoo facts and recipes, human-facing views and a separate read-only knowledge MCP | Private product in development |
 | Godoo Proxy | Hosted OAuth/SSO gateway for per-user operational Odoo access | Private product in development |
-| Godoo HQ | Product intent and coordination across the portfolio | Private coordination repository |
+
+Each repository owns its issues, documentation, verification, engineering and
+releases. Start with its README and agent guidance; use its GitHub issues for
+project requests and technical questions. Private repositories keep their work
+private. This profile is the shared family map, not a central engineering backlog.
 
 ## How the projects fit together
 
@@ -48,8 +52,9 @@ instances and record the observed server version. Atlas also checks its browser,
 knowledge and installed-package interfaces; Proxy checks its gateway foundation
 through an isolated HTTP process.
 
-HQ coordinates release scope and dependency order; each project owns its versions,
-changelog and native publisher. Package release workflows validate the candidate and
+Each project owns its release scope, versions, changelog and native publisher.
+Cross-project release selections preserve the consuming project's requirements
+and acceptance; they do not create a shared release gate. Package release workflows validate the candidate and
 promote the tested archive bytes. Image publication has its own verification and
 recovery requirements. A successful CI run is distinct from a
 published release, deployed service or application acceptance.
